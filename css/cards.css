@@ -1,0 +1,102 @@
+:root {
+   /* FONTS */
+   --font-Montserrat: 'Montserrat', sans-serif;
+   --font-Inconsolata: 'Inconsolata', monospace;
+
+   /* COLORS */
+   --off-black: #020912;
+   --off-white: #F5F3F8;
+   --light-purple: #A4A1FF;
+   --dark-purple: #7E7CC4;
+
+   /* SIZES */
+   --card-title: 1.5rem; /* 24px */
+   --card-body: 1rem; /* 16px */
+   --card-subtitle: 0.875rem; /* 14px */  
+}
+
+.custom-card-bg{
+   border: none;
+   background-color: var(--off-black);
+   color: var(--off-white);
+}
+
+.custom-card-bg hr{
+   width: 50%;
+   margin-left: 1.125rem;
+   opacity: 100;
+   border-radius: 2px;
+   border: 2px solid;
+   background-color: var(--off-white);
+}
+
+.custom-card-bg .card-body{
+   padding: 3.4375rem 3.75rem 3.125rem;
+}
+
+/* About card */
+.about-card{
+   background-image: url("../assets/circle.svg");
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: 15.75rem;
+}
+
+.about-card-title{
+   margin-bottom: 1rem;
+}
+
+.about-card .card-title{
+   margin-bottom: 0;
+}
+
+
+/* Timelines cards */
+.small-card{
+   width: 442px;
+   box-shadow: 14px 14px 0px -4px var(--off-white), 
+      14px 14px 0px 0px var(--light-purple);
+}
+
+.small-card .card-subtitle{
+   font-size: var(--card-subtitle);
+}
+
+.small-card .card-title{
+   font-size: var(--card-title);
+}
+
+.small-card .card-body{
+   padding: 1.5rem;
+   font-size: var(--card-body);
+}
+
+.card-align-left{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+
+.card-align-right{
+   display: flex;
+   justify-content: end;
+   align-items: center;
+}
+
+/* Project card */
+.project-card{
+   background-image: url("../assets/circle.svg");
+   background-repeat: no-repeat;
+   background-position: right bottom;
+   background-size: 13.5rem;
+}
+
+.card-link{
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.card-link i{
+   font-size: 1.75rem;
+}
