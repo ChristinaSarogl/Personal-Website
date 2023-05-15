@@ -1,7 +1,7 @@
 :root {
    /* FONTS */
-   --font-Montserrat: 'Montserrat', sans-serif;
-   --font-Inconsolata: 'Inconsolata', monospace;
+   --font-Neuton: 'Neuton', serif;
+   --font-Marker: 'Permanent Marker', cursive;
 
    /* COLORS */
    --off-black: #020912;
