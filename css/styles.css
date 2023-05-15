@@ -11,17 +11,18 @@
    --dark-purple: #7E7CC4;
 
    /* SIZES */
+   --body-size: 1.125rem; /* 18px */
+   /* OLD */
    --section-title: 1.75rem; /* 28px */
-   --card-title: 1.5rem; /* 24px */
-   --body-size: 1.25rem; /* 20px */
+   --card-title: 1.5rem; /* 24px */   
    --card-body: 1rem; /* 16px */
    --card-subtitle: 0.875rem; /* 14px */  
 }
 
 /* General classes */
 body{
-   background-color: var(--off-white);
-   color: var(--light-purple);
+   background-color: var(--off-black);
+   color: var(--off-white);
    font-size: var(--body-size);
 }
 
