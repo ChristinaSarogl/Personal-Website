@@ -1,29 +1,102 @@
 :root {
-   /* FONTS */
-   --font-Montserrat: 'Montserrat', sans-serif;
-   --font-Inconsolata: 'Inconsolata', monospace;
-   --font-light: 400;
-   --font-bold: 600;
+	/* FONTS */
+	--font-Neuton: "Neuton", serif;
+	--font-Marker: "Permanent Marker", cursive;
 
-   /* COLORS */
-   --off-black: #020912;
-   --off-white: #F5F3F8;
-   --light-purple: #A4A1FF;
-
-   /* Pixels */
-   --px-20: 1.25rem;
+	/* COLORS */
+	--off-white: #ebebeb;
+	--light-purple: #87a1ff;
 }
 
-.nav-bar{
+.mobile-menu-button {
+	display: flex;
+	flex-direction: column;
+	width: 2.813rem;
+
+	background-color: transparent;
+	border: none;
+}
+
+.mobile-menu-button span {
+	background: var(--off-white);
+	border-radius: 0.625rem;
+	height: 0.25rem;
+	margin: 0.25rem 0;
+	transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.mobile-menu-button span:nth-of-type(1) {
+	width: 50%;
+}
+
+.mobile-menu-button span:nth-of-type(2) {
+	width: 100%;
+}
+
+.mobile-menu-button span:nth-of-type(3) {
+	width: 75%;
+}
+
+/* Active States */
+.mobile-menu-button.active span:nth-of-type(1) {
+	transform-origin: bottom;
+	transform: rotatez(45deg) translate(6px, 1px);
+}
+
+.mobile-menu-button.active span:nth-of-type(2) {
+	transform-origin: top;
+	transform: rotatez(-45deg);
+}
+
+.mobile-menu-button.active span:nth-of-type(3) {
+	transform-origin: bottom;
+	width: 50%;
+	transform: translate(14px, -8px) rotatez(45deg);
+}
+
+@media screen and (min-width: 768px) {
+	.mobile-menu-button {
+		display: none;
+	}
+}
+
+.nav-link {
+	font-family: var(--font-Neuton);
+	color: var(--off-white);
+	text-align: end;
+}
+
+.nav-link:hover {
+   color: var(--off-white);
+}
+
+.nav-link:hover::after {
+	content: "";
+	display: block;
+	background-color: var(--light-purple);
+	height: 0.625rem;
+	border-radius: 0.625rem;
+	margin-top: -0.75rem;
+	width: 125%;
+	margin-left: -12%;
+}
+
+.nav-link:focus {
+   color: var(--off-white);
+   outline: none;
+   box-shadow: 0 0 0 0.125rem var(--light-purple);
+}
+
+/* .nav-bar{
    background-color: transparent;
 }
 
 .navbar .container-fluid{
    justify-content: end;
-}
+} */
 
 /* Nav button */
-.navbar-btn{
+/* .navbar-btn{
    background-color: transparent;
    border: 2px solid var(--off-white);
    border-radius: 5px;
@@ -31,10 +104,10 @@
 
 .bi-list{
    color: var(--off-white);
-}
+} */
 
 /* Navbar Links */
-.navbar-collapse{
+/* .navbar-collapse{
    z-index: 100;
    position: absolute;
    top: 52px;
@@ -54,4 +127,4 @@
 .nav-link:hover{
    font-weight: var(--font-bold);
    color: var(--light-purple);
-}
+} */
