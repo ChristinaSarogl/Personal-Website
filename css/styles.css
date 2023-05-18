@@ -2,7 +2,7 @@
 	/* FONTS */
 	--font-Neuton: "Neuton", serif;
 	--font-Marker: "Permanent Marker", cursive;
-   --font-Montserrat: 'Montserrat', sans-serif;
+	--font-Montserrat: "Montserrat", sans-serif;
 
 	/* COLORS */
 	--off-black: #1e1e1e;
@@ -13,7 +13,7 @@
 
 	/* SIZES */
 	--body-size: 1.125rem; /* 18px */
-   --section-title: 2.25rem; /* 36px */
+	--section-title: 2.25rem; /* 36px */
 	/* OLD */
 	--card-title: 1.5rem; /* 24px */
 	--card-body: 1rem; /* 16px */
@@ -32,15 +32,15 @@ a {
 	text-decoration: none;
 }
 
-.padding-70{
-   padding-top: 4.375rem;
+.padding-70 {
+	padding-top: 4.375rem;
 }
 
 /* Text */
 .section-title {
 	font-family: var(--font-Marker);
-   font-size: var(--section-title);
-   margin-bottom: 1.25rem;
+	font-size: var(--section-title);
+	margin-bottom: 1.25rem;
 }
 
 .contact-txt {
@@ -89,31 +89,44 @@ a {
 	grid-template-columns: 25% 25%;
 }
 
-.about-info p{
-   font-family: var(--font-Montserrat);
+.about-info p {
+	font-family: var(--font-Montserrat);
 }
 
-.about-info p span{
-   color: var(--light-purple);
+.about-info p span {
+	color: var(--light-purple);
 }
 
 /* Timeline */
-#timeline .section-title{
-   text-align: center;
+#timeline .section-title {
+	text-align: center;
 }
 
-.cs-button{
-   width: 50%;
-   padding: 12px 0;
-   font-family: var(--font-Neuton);
-   font-size: 1.5625rem;
-   border: 3px solid var(--off-white);
-   border-radius: 5px;
-   text-align: center;
+.cs-button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+	padding: 0.75rem 1.625rem;
+
+	font-family: var(--font-Neuton);
+	font-size: 1.5625rem;
+	border: 3px solid var(--off-white);
+	border-radius: 5px;
+
+	background-image: linear-gradient(var(--off-white), var(--off-white));
+	background-repeat: no-repeat;
+	transition: background-size 1s, color 1s;
+	background-size: 0% 100%;
 }
 
-.cs-button_sub-label{
-   font-size: 1.25rem;
+.cs-button:hover {
+	background-size: 100% 100%;
+	color: var(--off-black);
+}
+
+.cs-button_sub-label {
+	font-size: 1.25rem;
 }
 
 /* Vertical line */
