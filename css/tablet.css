@@ -23,7 +23,7 @@
 
 /* Tablet */
 @media screen and (max-width: 1199px) {
-   .profile-container{
+   /* .profile-container{
       display: flex;
       align-items: center;
    }
@@ -43,10 +43,10 @@
    .profile-col{
       margin-top: 2rem;
       text-align: center;
-   }
+   } */
 
    /* Cards */
-   .small-card{
+   /* .small-card{
       width: 100%;
       box-shadow: none;
       margin: 0 0 1rem 6.25rem;
@@ -54,23 +54,23 @@
 
    .custom-card-bg .card-body{
       padding: 2.25rem 2.5rem 2rem;
-   }
+   } */
 
    /* Vertical line */
-   #timeline .container::before{
+   /* #timeline .container::before{
       left: 12px;
-   }
+   } */
 
    /* Timeline bullets */
-   .card-align-right::before, .card-align-left::before{
+   /* .card-align-right::before, .card-align-left::before{
       left: 12px;
-   }
+   } */
 
 }
 
 /* Mobile */
 @media screen and (max-width: 767px) {
-   .padding-72{
+   /* .padding-72{
       padding: 2.25rem 0 0;
    }
 
@@ -93,10 +93,10 @@
 
    .custom-card{
       background-image: none;
-   }
+   } */
 
    /* Cards */
-   .custom-card-bg .card-body{
+   /* .custom-card-bg .card-body{
       padding: 2rem;
    }
 
@@ -106,20 +106,20 @@
 
    .gap-large{
       gap: 1.25rem;
-   }
+   } */
 
    /* Vertical line */
-   #timeline .container{
+   /* #timeline .container{
       margin-top: 1rem;
    }
 
    #timeline .container::before{
       display: none;
-   }
+   } */
 
    /* Timeline bullets */
-   .card-align-right::before, .card-align-left::before{
+   /* .card-align-right::before, .card-align-left::before{
       display: none;
-   }
+   } */
    
 }

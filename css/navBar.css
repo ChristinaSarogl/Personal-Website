@@ -60,10 +60,11 @@
 	}
 }
 
-.nav-link {
+.navbar-expand-md .navbar-nav .nav-link {
 	font-family: var(--font-Neuton);
 	color: var(--off-white);
 	text-align: end;
+   padding: 0.5rem 0.75rem;
 }
 
 .nav-link:hover {
@@ -86,45 +87,3 @@
    outline: none;
    box-shadow: 0 0 0 0.125rem var(--light-purple);
 }
-
-/* .nav-bar{
-   background-color: transparent;
-}
-
-.navbar .container-fluid{
-   justify-content: end;
-} */
-
-/* Nav button */
-/* .navbar-btn{
-   background-color: transparent;
-   border: 2px solid var(--off-white);
-   border-radius: 5px;
-}
-
-.bi-list{
-   color: var(--off-white);
-} */
-
-/* Navbar Links */
-/* .navbar-collapse{
-   z-index: 100;
-   position: absolute;
-   top: 52px;
-   background: var(--off-black);
-   width: 100%;
-   right: 0;
-   padding-right: var(--px-20);
-}
-
-.nav-link{
-   font-family: var(--font-Montserrat);
-   font-weight: var(--font-light);
-   color: var(--off-white);
-   text-align: end;
-}
-
-.nav-link:hover{
-   font-weight: var(--font-bold);
-   color: var(--light-purple);
-} */
