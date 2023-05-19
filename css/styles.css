@@ -43,15 +43,6 @@ a {
 	margin-bottom: 1.25rem;
 }
 
-.contact-txt {
-	font-size: var(--card-title);
-}
-
-.footer-subtitle {
-	font-size: var(--card-subtitle);
-	color: #6e6e6e;
-}
-
 /* Profile */
 .profile-container {
 	min-height: 100vh;
@@ -106,27 +97,42 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 50%;
+	width: 45%;
 	padding: 0.75rem 1.625rem;
 
 	font-family: var(--font-Neuton);
 	font-size: 1.5625rem;
 	border: 3px solid var(--off-white);
 	border-radius: 5px;
+	color: var(--off-white);
 
+	background-color: transparent;
 	background-image: linear-gradient(var(--off-white), var(--off-white));
 	background-repeat: no-repeat;
 	transition: background-size 1s, color 1s;
 	background-size: 0% 100%;
 }
 
-.cs-button:hover {
+.cs-button:hover, .cs-button:focus {
 	background-size: 100% 100%;
 	color: var(--off-black);
 }
 
 .cs-button_sub-label {
 	font-size: 1.25rem;
+	text-align: start;
+}
+
+.align-left{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+
+.align-right{
+   display: flex;
+   justify-content: end;
+   align-items: center;
 }
 
 /* Vertical line */
@@ -137,52 +143,35 @@ a {
 
 #timeline .container::before {
 	content: "";
-	border-left: 4px solid var(--light-purple);
-	border-radius: 10px;
+	border-left: 4px solid var(--off-white);
+	border-radius: 0.625rem;
 	height: 100%;
 	position: absolute;
 	left: 50%;
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }
 
 /* Timeline bullets */
-.card-align-right::before,
-.card-align-left::before {
+.align-right::before,
+.align-left::before {
 	content: "";
 	position: absolute;
-	width: 26px;
-	height: 26px;
+	width: 1.5rem;
+	height: 1.5rem;
 	left: 50%;
 	transform: translate(-45%);
-	background-color: var(--light-purple);
+	background-color: var(--off-white);
 	border-radius: 50%;
 }
 
-/* Links */
-.gap-small {
-	gap: 1.75rem;
-}
+/* Modal */
+.cs-modal{
+	width: 45%;
+	padding: 1rem;
+	margin-top: 0.5rem;
 
-.gap-large {
-	gap: 3.75rem;
-}
-
-.social-link {
-	font-size: 1.75rem;
-}
-
-.icon-xl {
-	font-size: 3.5rem;
-}
-
-.social-light {
-	color: var(--off-white);
-}
-
-.social-light:hover {
-	color: var(--light-purple);
-}
-
-.contact-link:hover .icon-xl {
-	color: var(--off-white);
+	font-family: var(--font-Montserrat);
+	font-size: 1.125rem;
+	background-color: var(--off-white);
+	color: var(--off-black);
 }
