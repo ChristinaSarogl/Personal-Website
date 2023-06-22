@@ -96,7 +96,7 @@
 					<h2 class="section-title">Who am I ?</h2>
 					<p>
 						Hey! I am Christina from Greece! I am a Software Engineer graduate with a dash of an artist. <br /><br />I am currently working as a <span>Junior Web Developer</span>, which allows me to learn new things every day and to think on my
-						feet. <br /><br />Except from my love for coding, I love drawing (all illustrations are my creation) and making handmade gifts for my loved ones. While you are here, be sure to say hi, especially if you're in education, arts and coding!
+						feet. <br /><br />Except from my love for coding, I love drawing (all illustrations are my creation) and making handmade gifts for my loved ones. While you are here, be sure to say hi, especially if you're into education, arts and coding!
 					</p>
 				</div>
 			</div>
@@ -107,32 +107,46 @@
 
 			<div class="container">
 				<div class="align-left">
-					<button type="button" class="cs-button">
+					<button type="button" class="modal-btn" data-target="#deloitteModal"
+						aria-expanded="false" aria-controls="deloitteCardExpand">
 						<div>
-							<p class="cs-button_label m-0">Junior Web Developer</p>
-							<p class="cs-button_sub-label m-0">Deloitte | 2022 - Present</p>
+							<p class="modal-btn_label m-0">Junior Web Developer</p>
+							<p class="modal-btn_sub-label m-0">Deloitte | 2022 - Present</p>
 						</div>
 						<i class="bi bi-chevron-down"></i>
 					</button>
 				</div>
 
-				<div class="cs-modal">
-					<p class="m-0">I currently work as a Junior Web Developer at Deloitte Greece, using Adobe Experience Manager to develop 
-						responsive websites.
-						<br/><br/>My main responsibilities include multitasking across multiple functions and roles to meet deadlines and
-						organizational expectations, as well as, engage with clients to plan and optimize site-related issues.
-					</p>
+				<div class="cs-modal hide" id="deloitteModal">
+					<div>
+						<p class="m-0">I currently work as a Junior Web Developer at Deloitte Greece, using Adobe Experience Manager to develop 
+							responsive websites.
+							<br/><br/>My main responsibilities include multitasking across multiple functions and roles to meet deadlines and
+							organizational expectations, as well as, engage with clients to plan and optimize site-related issues.
+						</p>
+					</div>
 				</div>
 
 				<div class="align-right">
-					<button type="button" class="cs-button">
+					<button type="button" class="modal-btn" data-target="#bachelorModal"
+						aria-expanded="false" aria-controls="bachelorCardExpand">
 						<div>
-							<p class="cs-button_label m-0">(Hons) Computer Science (Software Engineering)</p>
-							<p class="cs-button_sub-label m-0">2018 - 2022</p>
+							<p class="modal-btn_label m-0">(Hons) Computer Science (Software Engineering)</p>
+							<p class="modal-btn_sub-label m-0">2018 - 2022</p>
 						</div>
 						<i class="bi bi-chevron-down"></i>
 					</button>
 				</div>
+
+				<div class="cs-modal modal-align-right hide" id="bachelorModal">
+					<div>
+						<p class="m-0">Graduated with a classification of First Honors (1:1) in 2022.
+							<br/><br/> My time at the university pushed me to expand, challenge, and adjust my worldview, as well as, experiment with a variety of technologies and computer science concepts.
+						</p>
+					</div>
+				</div>
+
+				
 
 				<!-- <div class="card-align-left">
 					<div class="card custom-card-bg small-card">

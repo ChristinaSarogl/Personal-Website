@@ -93,7 +93,7 @@ a {
 	text-align: center;
 }
 
-.cs-button {
+.modal-btn {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -109,16 +109,26 @@ a {
 	background-color: transparent;
 	background-image: linear-gradient(var(--off-white), var(--off-white));
 	background-repeat: no-repeat;
-	transition: background-size 1s, color 1s;
+	transition: background-size 0.8s, color 0.8s;
 	background-size: 0% 100%;
 }
 
-.cs-button:hover, .cs-button:focus {
+.modal-btn:hover, .modal-btn:focus-visible {
 	background-size: 100% 100%;
 	color: var(--off-black);
 }
 
-.cs-button_sub-label {
+/* Open Button */
+.modal-btn.open{	
+	background-color: var(--off-white);
+	color: var(--off-black);
+}
+
+.modal-btn.open i{
+	rotate: 180deg;
+}
+
+.modal-btn_sub-label {
 	font-size: 1.25rem;
 	text-align: start;
 }
@@ -174,4 +184,43 @@ a {
 	font-size: 1.125rem;
 	background-color: var(--off-white);
 	color: var(--off-black);
+}
+
+.cs-modal.modal-align-right{
+	margin-left: auto;
+}
+
+.cs-modal.show{
+	animation: growDown 1s ease-in-out;
+	transform-origin: top center;
+}
+
+.cs-modal.hide{
+	animation: growUp .8s ease-in-out forwards;
+	transform-origin: top center;
+}
+
+@keyframes growDown {
+	0% {
+		transform: scaleY(0);
+	}
+	80% {
+		transform: scaleY(1.1);
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+@keyframes growUp {
+	0% {
+		transform: scaleY(1.1);
+	}
+	70% {
+		transform: scaleY(0.8);
+	}
+	100% {
+		transform: scaleY(0);
+		line-height: 0;
+	}
 }
