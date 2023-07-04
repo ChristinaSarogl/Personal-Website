@@ -113,18 +113,19 @@ a {
 	background-size: 0% 100%;
 }
 
-.modal-btn:hover, .modal-btn:focus-visible {
+.modal-btn:hover,
+.modal-btn:focus-visible {
 	background-size: 100% 100%;
 	color: var(--off-black);
 }
 
 /* Open Button */
-.modal-btn.open{	
+.modal-btn.open {
 	background-color: var(--off-white);
 	color: var(--off-black);
 }
 
-.modal-btn.open i{
+.modal-btn.open i {
 	rotate: 180deg;
 }
 
@@ -133,16 +134,16 @@ a {
 	text-align: start;
 }
 
-.align-left{
-   display: flex;
-   justify-content: start;
-   align-items: center;
+.align-left {
+	display: flex;
+	justify-content: start;
+	align-items: center;
 }
 
-.align-right{
-   display: flex;
-   justify-content: end;
-   align-items: center;
+.align-right {
+	display: flex;
+	justify-content: end;
+	align-items: center;
 }
 
 /* Vertical line */
@@ -175,7 +176,7 @@ a {
 }
 
 /* Modal */
-.cs-modal{
+.cs-modal {
 	width: 45%;
 	padding: 1rem;
 	margin-top: 0.5rem;
@@ -186,17 +187,17 @@ a {
 	color: var(--off-black);
 }
 
-.cs-modal.modal-align-right{
+.cs-modal.modal-align-right {
 	margin-left: auto;
 }
 
-.cs-modal.show{
+.cs-modal.show {
 	animation: growDown 1s ease-in-out;
 	transform-origin: top center;
 }
 
-.cs-modal.hide{
-	animation: growUp .8s ease-in-out forwards;
+.cs-modal.hide {
+	animation: growUp 0.8s ease-in-out forwards;
 	transform-origin: top center;
 }
 
@@ -223,4 +224,18 @@ a {
 		transform: scaleY(0);
 		line-height: 0;
 	}
+}
+
+/* Projects */
+input[type="radio"] {
+	display: none;
+}
+
+.carouselContainer{
+	margin-top: 1.563rem;
+}
+
+.carouselCards{
+	display: flex;
+	justify-content: center;
 }

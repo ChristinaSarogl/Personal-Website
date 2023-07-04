@@ -36,4 +36,10 @@ document.addEventListener("DOMContentLoaded", function(){
          modal.classList.toggle('hide');
       });
    });
+
+   document.querySelectorAll('.carouselCard').forEach(item => {
+      item.addEventListener('click', event =>{
+         console.log(event.target);
+      })
+   });
 });

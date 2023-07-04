@@ -16,8 +16,9 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="css/navBar.css" />
+		<link rel="stylesheet" href="css/cards.css" />
 		<!-- JS -->
-		<script src="js/navBar.js"></script>
+		<script src="js/base.js"></script>
 
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
@@ -66,26 +67,6 @@
 				<h1>Saroglaki <span>[she/her]</span></h1>
 			</div>
 		</section>
-		<!-- <section class="profile-container container" id="profile">
-			<div class="profile-row row align-items-center">
-				<div class="image-col col-12 col-xl-4 order-xl-2">
-					<div class="profile-pic">
-						<img src="assets/profile.jpeg" alt="Profile Pic" />
-					</div>
-				</div>
-
-				<div class="profile-col col-12 col-xl-8 order-xl-1">
-					<h1 class="montserrat m-0 title">Hi, I'm <span class="text-purple">Christina</span>,</h1>
-					<p class="inconsolata title-subtitle">and I'm a Software Engineer.</p>
-
-					<div class="d-inline-flex justify-content-center flex-wrap gap-small">
-						<a class="social-link social-light" href="https://github.com/ChristinaSarogl" target="_blank"><i class="bi bi-github icon-bg"></i></a>
-						<a class="social-link social-light" href="https://www.linkedin.com/in/christina-ioanna-saroglaki" target="_blank"><i class="bi bi-linkedin icon-bg"></i></a>
-						<a class="social-link social-light" href="mailto:xristsar@gmail.com" target="_blank"><i class="bi bi-envelope-fill icon-bg"></i></a>
-					</div>
-				</div>
-			</div>
-		</section> -->
 
 		<section id="about">
 			<div class="grid-container">
@@ -96,7 +77,8 @@
 					<h2 class="section-title">Who am I ?</h2>
 					<p>
 						Hey! I am Christina from Greece! I am a Software Engineer graduate with a dash of an artist. <br /><br />I am currently working as a <span>Junior Web Developer</span>, which allows me to learn new things every day and to think on my
-						feet. <br /><br />Except from my love for coding, I love drawing (all illustrations are my creation) and making handmade gifts for my loved ones. While you are here, be sure to say hi, especially if you're into education, arts and coding!
+						feet. <br /><br />Except from my love for coding, I love drawing (all illustrations are my creation) and making handmade gifts for my loved ones. While you are here, be sure to say hi, especially if you're into education, arts and
+						coding!
 					</p>
 				</div>
 			</div>
@@ -107,8 +89,7 @@
 
 			<div class="container">
 				<div class="align-left">
-					<button type="button" class="modal-btn" data-target="#deloitteModal"
-						aria-expanded="false" aria-controls="deloitteCardExpand">
+					<button type="button" class="modal-btn" data-target="#deloitteModal" aria-expanded="false" aria-controls="deloitteCardExpand">
 						<div>
 							<p class="modal-btn_label m-0">Junior Web Developer</p>
 							<p class="modal-btn_sub-label m-0">Deloitte | 2022 - Present</p>
@@ -119,17 +100,18 @@
 
 				<div class="cs-modal hide" id="deloitteModal">
 					<div>
-						<p class="m-0">I currently work as a Junior Web Developer at Deloitte Greece, using Adobe Experience Manager to develop 
-							responsive websites.
-							<br/><br/>My main responsibilities include multitasking across multiple functions and roles to meet deadlines and
-							organizational expectations, as well as, engage with clients to plan and optimize site-related issues.
-						</p>
+						<p class="m-0">
+							I'm currently a Junior Web Developer rocking it at Deloitte, specializing in responsive website development using Adobe Experience Manager.
+							<br/><br/>I use cool technologies like HTML, SCSS, Java, and JavaScript to bring digital dreams to life. I also lead a super talented team that handles content migration.
+							We make sure that valuable data smoothly moves over to Adobe Experience Manager (AEM) without a hitch. 
+							<br/><br/>When it comes to clients, I make sure that I am there to help them out with any questions they may have about AEM. I'm your go-to person for answers and solutions.
+							From design tweaks to pesky bugs, I've got your back.
+							</p>
 					</div>
 				</div>
 
 				<div class="align-right">
-					<button type="button" class="modal-btn" data-target="#bachelorModal"
-						aria-expanded="false" aria-controls="bachelorCardExpand">
+					<button type="button" class="modal-btn" data-target="#bachelorModal" aria-expanded="false" aria-controls="bachelorCardExpand">
 						<div>
 							<p class="modal-btn_label m-0">(Hons) Computer Science (Software Engineering)</p>
 							<p class="modal-btn_sub-label m-0">2018 - 2022</p>
@@ -140,13 +122,14 @@
 
 				<div class="cs-modal modal-align-right hide" id="bachelorModal">
 					<div>
-						<p class="m-0">Graduated with a classification of First Honors (1:1) in 2022.
-							<br/><br/> My time at the university pushed me to expand, challenge, and adjust my worldview, as well as, experiment with a variety of technologies and computer science concepts.
+						<p class="m-0">
+							I graduated university with a degree classification of First Honors (1:1) in 2022.
+							<br /><br />During my time at university, I delved into a diverse range of fields and technologies.
+							From Python and Java to web and mobile development, UX/UI design, and even AI, I immersed myself in the ever-evolving tech landscape.
+							
 						</p>
 					</div>
 				</div>
-
-				
 
 				<!-- <div class="card-align-left">
 					<div class="card custom-card-bg small-card">
@@ -167,53 +150,61 @@
 						</div>
 					</div>
 				</div> -->
-
-				<!-- <div class="card-align-left">
-					<div class="card custom-card-bg small-card">
-						<div class="card-body">
-							<p class="card-subtitle montserrat-light">2022-Present</p>
-							<h3 class="card-title inconsolata">Junior Web Developer</h3>
-							<p class="card-subtitle montserrat-light mb-2">@ Deloitte | Thessaloniki, Greece</p>
-							<p class="card-text">
-								I currently works as a Junior Web Developer using AEM to develop responsive websites. My main responsibilities include multitasking across multiple functions and roles to meet deadlines and organizational expectations, as well as,
-								engage with clients to plan and optimize site-related issues.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="card-align-right">
-					<div class="card custom-card-bg small-card">
-						<div class="card-body">
-							<p class="card-subtitle montserrat-light">2018-2022</p>
-							<h3 class="card-title inconsolata">B.Sc(Hons) Computer Science (Software Engineering)</h3>
-							<p class="card-subtitle montserrat-light mb-2">@ University of Wolverhampton | Wolverhampton, UK</p>
-							<p class="card-text">
-								Graduated with a classification of First Honors (1:1) in 2022. My time at the university pushed me to expand, challenge, and adjust my worldview, as well as, experiment with a variety of technologies and computer science concepts.
-							</p>
-						</div>
-					</div>
-				</div> -->
 			</div>
 		</section>
 
-		<section class="padding-72" id="projects">
+		<section class="padding-70" id="projects">
 			<div class="container">
-				<div class="card project-card custom-card-bg">
-					<div class="card-body">
-						<div class="custom-card-title d-flex align-items-center">
-							<h2 class="card-title montserrat section-title d-inline-block">Projects</h2>
-							<hr class="d-inline-block" />
-						</div>
-						<p class="card-text inconsolata">This webpage is my first official project after university, but more are coming soon! <br />You can check my GitHub to check my university projects!</p>
-						<a class="social-light card-link" href="https://github.com/ChristinaSarogl" target="_blank">
-							<i class="bi bi-github icon-xl"></i>
-							<p class="mb-0">ChristinaSarogl</p>
-						</a>
-					</div>
+				<h2 class="section-title">What have I Done?</h2>
+
+				<div class="carouselContainer">
+					<input type="radio" name="slider" id="item-1" checked>
+					<input type="radio" name="slider" id="item-2">
+					<input type="radio" name="slider" id="item-3">
+
+					<div class="carouselCards">
+						<label class="carouselCard" for="item-3" id="project-3">
+							<h3>GeoScavenger</h3>
+							<p>
+								GeoScavenger contains a mobile player app and a manager website.							
+								The mobile application allows the players to manage their accounts, 
+								explore hunts near their location, follow clues, 
+								track their progress, and compete for the highest score.
+								<br/><br/>The web application allows the hunt managers to create 
+								and manage hunts via a dashboard, track active users of a hunt on a map, 
+								and communicate with players using instant messages.
+							</p>
+							<button type="button" disabled>Check the repo!</button>
+						</label>
+						<label class="carouselCard" for="item-1" id="project-1">
+							<h3>Personal Portfolio</h3>
+							<p>
+								This webpage is my first official project after university, but more are coming soon!
+								<br/><br/>Int he meanwhile, you can check my GitHub to see the code or check out my university projects!
+							</p>
+							<button type="button">Check the repo!</button>
+						</label>
+						<label class="carouselCard" for="item-2" id="project-2">
+							<h3>BookHood</h3>
+							<p>
+								BookHood is a user-friendly website that brings book lovers together.
+								<br/><br/>With BookHood, users can log in, manage their accounts, and curate personalized 
+								book lists. Users can also contribute to the website's database by adding new books 
+								and sharing their valuable reviews. All titles are organized into categories, 
+								allowing users to sort them by title, rating, or date added.
+							</p>
+							<button type="button" disabled>Check the repo!</button>
+						</label>						
+					 </div>
 				</div>
 			</div>
 		</section>
+
+		<section class="padding-70" id="contact">
+			<h2 class="section-title">Don't Be A Stranger.</h2>
+		</section>
+
+				<!-- 
 
 		<section class="margin-30 padding-72-72 dark-bg" id="contact">
 			<h2 class="montserrat-light text-center section-title">Connect with me!</h2>
