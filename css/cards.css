@@ -5,13 +5,17 @@
 	--font-Montserrat: "Montserrat", sans-serif;
 
 	/* COLORS */
-	--off-black: #1e1e1e;
+	--off-black: #020912;
 	--off-white: #ebebeb;
 	--light-purple: #87a1ff;
 
 	/* SIZES */
 	--body-size: 1.125rem; /* 18px */
 	--section-title: 2.25rem; /* 36px */
+}
+
+.projectCard{
+	
 }
 
 .carouselCard {
@@ -21,6 +25,7 @@
 
 	background-color: var(--light-purple);
 	border: 0.1875rem solid var(--off-white);
+	border-radius: 10px;
 	padding: 0.563rem 1.5rem 1.625rem;
 
    display: flex;

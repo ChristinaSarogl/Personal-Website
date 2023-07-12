@@ -39,7 +39,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
    document.querySelectorAll('.carouselCard').forEach(item => {
       item.addEventListener('click', event =>{
-         console.log(event.target);
+         let elemName = event.target.className;
+         let elem = event.target;
+
+         if (!elemName.includes('carouselCard')){
+            elem = event.target.parentElement;
+         }
+
+         console.log(elem);
+         console.log(elem.querySelector('button'));
+         let activeButton = elem.getElementsByTagName('button')[0];
+         if (activeButton.disabled){
+            activeButton.disabled = false;
+         }
       })
    });
 });
