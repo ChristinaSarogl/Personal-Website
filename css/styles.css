@@ -112,7 +112,7 @@ a {
 }
 
 .side-menu_buttons {
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -165,8 +165,29 @@ a {
 }
 
 /* Contact */
+#contact .section-title{
+  margin-bottom: 2.25rem;
+}
+
 .contact-container{
   display: flex;
+  column-gap: 1.25rem;
   justify-content: center;
-  align-items: center;
+  font-family: var(--font-Montserrat);
+  margin-bottom: 5rem;
+}
+
+.contact-container .bi{
+  font-size: 2.5rem;
+}
+
+.contact-link{
+  color: var(--off-white);
+}
+
+.footer{
+  padding: 0.625rem 3rem;
+  font-family: var(--font-Montserrat);
+  font-size: 0.875rem;
+  color: #59575b;
 }
