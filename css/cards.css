@@ -8,78 +8,54 @@
 	--off-black: #020912;
 	--off-white: #ebebeb;
 	--light-purple: #87a1ff;
+	--grey: #c7c7c7;
 
 	/* SIZES */
 	--body-size: 1.125rem; /* 18px */
 	--section-title: 2.25rem; /* 36px */
 }
 
-
-.carouselCard {
-	width: 30%;
-	transition: transform 0.4s ease;
-	cursor: pointer;
-
-	background-color: var(--light-purple);
-	border: 0.1875rem solid var(--off-white);
-	border-radius: 10px;
-	padding: 0.563rem 1.5rem 1.625rem;
-
-   display: flex;
-   flex-direction: column;
+.cards-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 0.625rem;
 }
 
-.carouselCard h3 {
-	font-size: 1.875rem;
-	margin-bottom: 1rem;
-	text-align: center;
-}
-
-.carouselCard p{
-	font-family: var(--font-Montserrat);
-	color: var(--off-black);
-	margin-bottom: 1.5rem;
-}
-
-.carouselCard button{
-	background-color: var(--off-black);
+.card{
+	padding: 2rem 1.75rem;
+	border-radius: 0.625rem;
+	background-color: #252329;
 	color: var(--off-white);
-	border: none;
-	border-radius: 0.313rem;
-	width: 100%;
-	padding: 0.5rem 0;
+	transform: none;
+	transition: transform .4s ease-out, background-color .5s ease-out;
+}
+
+.card:hover{
+	transform:translateY(-0.625rem);
+	background-color: #403b49;
+}
+
+.card-links{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bi-folder-fill{
+	font-size: 2.5rem;
+    color: var(--light-purple);
+}
+
+.bi-github{
+	font-size: 1.875rem;
+	color: var(--off-white);
+}
+
+.card-body{
+	padding: 0;
+}
+
+.card-text{
 	font-family: var(--font-Montserrat);
-   margin-top: auto;
-}
-
-.carouselCard button:hover{
-   background-color: #444444;
-}
-
-.carouselCard button:disabled:hover{
-   background-color: var(--off-black);
-}
-
-#item-1:checked ~ .carouselCards #project-3,
-#item-2:checked ~ .carouselCards #project-1,
-#item-3:checked ~ .carouselCards #project-2 {
-	transform: scale(0.8);
-	opacity: 0.4;
-	z-index: 0;
-}
-
-#item-1:checked ~ .carouselCards #project-2,
-#item-2:checked ~ .carouselCards #project-3,
-#item-3:checked ~ .carouselCards #project-1 {
-	transform: scale(0.8);
-	opacity: 0.4;
-	z-index: 0;
-}
-
-#item-1:checked ~ .carouselCards #project-1,
-#item-2:checked ~ .carouselCards #project-2,
-#item-3:checked ~ .carouselCards #project-3 {
-	transform: translatex(0) scale(1);
-	opacity: 1;
-	z-index: 1;
+	font-size: 1rem;
 }
