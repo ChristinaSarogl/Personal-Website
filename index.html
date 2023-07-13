@@ -63,7 +63,7 @@
 		<section class="profile-container container" id="profile">
 			<div class="title-container">
 				<h1>Christina Ioanna</h1>
-				<h1>Saroglaki <span>[she/her]</span></h1>
+				<h1>Saroglaki <span class="purple">[she/her]</span></h1>
 				<p>Software Engineer with an artistic side. I am interested in full-stack development, artificial intelligence, and everything in between.</p>
 			</div>
 		</section>
@@ -76,7 +76,7 @@
 				<div class="about-info">
 					<h2 class="section-title">Who am I ?</h2>
 					<p>
-						Hey! I am Christina from Greece! I am a Software Engineer graduate with a dash of an artist. <br /><br />I am currently working as a <span>Junior Web Developer</span>, which allows me to learn new things every day and to think on my
+						Hey! I am Christina from Greece! I am a Software Engineer graduate with a dash of an artist. <br /><br />I am currently working as a <span class="purple">Junior Web Developer</span>, which allows me to learn new things every day and to think on my
 						feet. <br /><br />Except from my love for coding, I love drawing (all illustrations are my creation) and making handmade gifts for my loved ones. While you are here, be sure to say hi, especially if you're into education, arts and
 						coding!
 					</p>
@@ -85,9 +85,48 @@
 		</section> 
 
 		<section class="padding-70" id="timeline">
-			<h2 class="section-title">My Timeline</h2>
-
 			<div class="container">
+				<h2 class="section-title">My Timeline</h2>
+
+				<div class="side-menu_container">
+					<div class="side-menu_buttons">
+						<button type="button" class="side-menu_btn" data-bs-target="deloitteModal" aria-expanded="true" aria-controls="deloitteModal" disabled>Deloitte</button>					
+						<button type="button" class="side-menu_btn" data-bs-target="bachelorModal" aria-expanded="false" aria-controls="bachelorModal">University of Wolverhampton</button>
+					</div>
+					<div class="side-menu_modals">
+						<div class="side-menu_modal" id="deloitteModal">
+							<div>
+								<h3>Junior Web Developer @ <span class="purple">Deloitte</span></h3>
+								<p class="subtitle">JUNE 2022 - PRESENT</p>
+								<p class="fade-in show" style="transition-delay: 100ms;">
+									I'm currently a Junior Web Developer rocking it at Deloitte, specializing in responsive website development using Adobe Experience Manager.</p>
+								<p class="fade-in show" style="transition-delay: 200ms;">
+									I use cool technologies like HTML, SCSS, Java, and JavaScript to bring digital dreams to life. I also lead a super talented team that handles content migration.
+									We make sure that valuable data smoothly moves over to Adobe Experience Manager (AEM) without a hitch. </p>
+								<p class="fade-in show m-0" style="transition-delay: 300ms;">
+									When it comes to clients, I make sure that I am there to help them out with any questions they may have about AEM. I'm your go-to person for answers and solutions.
+									From design tweaks to pesky bugs, I've got your back.</p>
+							</div>
+						</div>
+						<div class="side-menu_modal hide" id="bachelorModal">
+							<div>
+								<h3>(Hons) Computer Science (Software Engineering)</h3>
+								<p class="subtitle">SEPT 2018 - MAY 2022</p>
+								<p class="fade-in" style="transition-delay: 100ms;">
+									I graduated university with a degree classification of First Honors (1:1) in 2022. </p>
+								<p class="fade-in m-0" style="transition-delay: 200ms;">
+									During my time at university, I delved into a diverse range of fields and technologies.
+									From Python and Java to web and mobile development, UX/UI design, and even AI, I immersed myself in the ever-evolving tech landscape.</p>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>				
+			</div>
+			
+
+			<!-- <div class="container">
 				<div class="align-left">
 					<button type="button" class="modal-btn" data-target="#deloitteModal" aria-expanded="false" aria-controls="deloitteCardExpand">
 						<div>
@@ -106,7 +145,7 @@
 							We make sure that valuable data smoothly moves over to Adobe Experience Manager (AEM) without a hitch. 
 							<br/><br/>When it comes to clients, I make sure that I am there to help them out with any questions they may have about AEM. I'm your go-to person for answers and solutions.
 							From design tweaks to pesky bugs, I've got your back.
-							</p>
+						</p>
 					</div>
 				</div>
 
@@ -129,7 +168,7 @@
 							
 						</p>
 					</div>
-				</div>
+				</div> -->
 
 				<!-- <div class="card-align-left">
 					<div class="card custom-card-bg small-card">
