@@ -6,6 +6,7 @@
   /* COLORS */
   --off-white: #ebebeb;
   --light-purple: #87a1ff;
+  --px-5: 0.3125rem;
 }
 
 /* Nav Bar */
@@ -14,10 +15,68 @@
 
 /* Tablet */
 @media screen and (max-width: 1199px) {
-   
+  /* Profile */
+  .title-container p {
+    width: 100%;
+  }
+
+  /* ABOUT */
+  .grid-container {
+    grid-template-columns: 40% 50%;
+  }
+
+  /* Projects */
+  .cards-container{
+    grid-template-columns: auto auto;
+  }
 }
 
 /* Mobile */
 @media screen and (max-width: 767px) {
-   
+  .title-container h1 {
+    font-size: 3.125rem;
+  }
+
+  .title-container h1:first-child{
+    margin-bottom: 0;
+  }
+
+  .title-container span {
+    font-size: 1rem;
+  }
+
+  /* ABOUT */
+  .grid-container, .cards-container {
+    grid-template-columns: auto;
+  }
+
+  .about-info{
+    text-align: center;
+  }
+
+  .about-img{
+    position: relative;
+    width: 214px;
+    height: 214px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 0px 10px var(--off-black), 0px 0px 0px 14px var(--off-white);
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;    
+  }
+
+  /* Timeline */
+  .side-menu_container {
+    display: none;
+  }
 }
