@@ -5,7 +5,7 @@
   --font-Montserrat: "Montserrat", sans-serif;
 
   /* COLORS */
-  --off-black: #020912;
+  --off-black: #252329;
   --off-white: #ebebeb;
   --light-purple: #87a1ff;
   --grey: #c7c7c7;
@@ -13,6 +13,7 @@
   /* SIZES */
   --body-size: 1.125rem; /* 18px */
   --section-title: 2.25rem; /* 36px */
+  --px-5: 0.3125rem;
 }
 
 /* General classes */
@@ -103,7 +104,7 @@ a {
   width: 18.75rem;
   padding: 0.625rem;
   border-radius: 0.625rem;
-  border: 0.3125rem solid white;
+  border: var(--px-5) solid white;
 }
 
 /* Timeline */
@@ -112,14 +113,14 @@ a {
 }
 
 .side-menu_buttons {
-  width: 40%;
+  width: 55%;
   display: flex;
   flex-direction: column;
 }
 
 .side-menu_btn {
   padding: 0.75rem 1.625rem;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   text-align: start;
   background-color: transparent;
   color: var(--grey);
@@ -127,7 +128,7 @@ a {
 }
 
 .side-menu_btn[aria-expanded="true"] {
-  box-shadow: 0.3125rem 0 var(--light-purple);
+  box-shadow: var(--px-5) 0 var(--light-purple);
   color: var(--off-white);
 }
 
@@ -165,28 +166,38 @@ a {
 }
 
 /* Contact */
-#contact .section-title{
-  margin-bottom: 2.25rem;
-}
-
 .contact-container{
   display: flex;
-  column-gap: 1.25rem;
+  gap: 1.5rem;
   justify-content: center;
-  font-family: var(--font-Montserrat);
-  margin-bottom: 5rem;
-}
-
-.contact-container .bi{
-  font-size: 2.5rem;
 }
 
 .contact-link{
-  color: var(--off-white);
+  padding: 1.25rem;
+  border: var(--px-5) solid var(--off-white);
 }
 
-.footer{
-  padding: 0.625rem 3rem;
+.contact-link:hover{
+  background-color: var(--light-purple);
+  border: var(--px-5) solid var(--off-black);
+}
+
+.contact-link:hover .bi{
+  color: var(--off-black);
+}
+
+.contact-link .bi{
+  display: contents;  
+  font-size: 2.5rem;
+  color: var(--off-white);  
+}
+
+/* Footer */
+.footer-container{
+  display: grid;
+  grid-template-columns: 25%;
+  justify-content: center;
+  justify-items: center;
   font-family: var(--font-Montserrat);
   font-size: 0.875rem;
   color: #59575b;

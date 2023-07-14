@@ -5,7 +5,7 @@
 	--font-Montserrat: "Montserrat", sans-serif;
 
 	/* COLORS */
-	--off-black: #020912;
+	--off-black: #252329;
 	--off-white: #ebebeb;
 	--light-purple: #87a1ff;
 	--grey: #c7c7c7;
@@ -17,14 +17,16 @@
 
 .cards-container{
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 30% 30% 30%;
 	gap: 0.625rem;
+	justify-content: center;
 }
 
 .card{
 	padding: 2rem 1.75rem;
 	border-radius: 0.625rem;
-	background-color: #252329;
+	background-color: var(--off-black);
+	border: 1px solid #1d1c21;
 	color: var(--off-white);
 	transform: none;
 	transition: transform .4s ease-out, background-color .5s ease-out;
@@ -46,7 +48,7 @@
     color: var(--light-purple);
 }
 
-.bi-github{
+.card .bi-github{
 	font-size: 1.875rem;
 	color: var(--off-white);
 }
