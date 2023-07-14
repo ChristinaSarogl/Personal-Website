@@ -1,125 +1,23 @@
 :root {
-   /* FONTS */
-   --font-Montserrat: 'Montserrat', sans-serif;
-   --font-Inconsolata: 'Inconsolata', monospace;
+  /* FONTS */
+  --font-Neuton: "Neuton", serif;
+  --font-Marker: "Permanent Marker", cursive;
 
-   /* COLORS */
-   --off-black: #020912;
-   --off-white: #F5F3F8;
-   --light-purple: #A4A1FF;
+  /* COLORS */
+  --off-white: #ebebeb;
+  --light-purple: #87a1ff;
 }
 
 /* Nav Bar */
 @media screen and (min-width: 768px) {
-   .navbar-btn{
-      display: none;
-   }
-
-   .navbar-collapse{
-      position: relative;
-      top: 0;
-   }
 }
 
 /* Tablet */
 @media screen and (max-width: 1199px) {
-   /* .profile-container{
-      display: flex;
-      align-items: center;
-   }
-
-   .profile-row{
-      padding-top: 0;
-      top: -72px;
-      position: relative;
-   }
-
-   .image-col{
-      display: flex;
-      justify-content: center;
-      margin-bottom: 1rem;
-   }
-
-   .profile-col{
-      margin-top: 2rem;
-      text-align: center;
-   } */
-
-   /* Cards */
-   /* .small-card{
-      width: 100%;
-      box-shadow: none;
-      margin: 0 0 1rem 6.25rem;
-   }
-
-   .custom-card-bg .card-body{
-      padding: 2.25rem 2.5rem 2rem;
-   } */
-
-   /* Vertical line */
-   /* #timeline .container::before{
-      left: 12px;
-   } */
-
-   /* Timeline bullets */
-   /* .card-align-right::before, .card-align-left::before{
-      left: 12px;
-   } */
-
+   
 }
 
 /* Mobile */
 @media screen and (max-width: 767px) {
-   /* .padding-72{
-      padding: 2.25rem 0 0;
-   }
-
-   .profile-pic{ 
-      width: 214px; 
-      height: 214px; 
-   }
-
-   .profile-row{
-      top: -46px;
-   }
-
-   .title{
-      font-size: 2.5rem;
-   }
-
-   .subtitle{
-      font-size: 1.25rem;
-   }
-
-   .custom-card{
-      background-image: none;
-   } */
-
-   /* Cards */
-   /* .custom-card-bg .card-body{
-      padding: 2rem;
-   }
-
-   .small-card{
-      margin: 0 0 1rem 0;
-   }
-
-   .gap-large{
-      gap: 1.25rem;
-   } */
-
-   /* Vertical line */
-   /* #timeline .container{
-      margin-top: 1rem;
-   }
-
-   #timeline .container::before{
-      display: none;
-   } */
-
-   /* Timeline bullets */
-   /* .card-align-right::before, .card-align-left::before{
-      display: none;
-   } */
    
 }
