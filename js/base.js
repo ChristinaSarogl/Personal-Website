@@ -28,7 +28,12 @@ function changeModalVisibility(item) {
 
 document.addEventListener("DOMContentLoaded", function () {
   let timelineCard = document.getElementsByClassName("side-menu_container")[0];
-  timelineCard.style.minHeight = timelineCard.offsetHeight + "px";
+  const deloitteModal = document.getElementById("deloitteModal");
+  timelineCard.style.minHeight = deloitteModal.offsetHeight + "px";
+
+  window.onresize = function (){
+    timelineCard.style.minHeight = deloitteModal.offsetHeight + "px";
+  };
 
   document.querySelectorAll(".side-menu_btn").forEach((item) => {
     item.addEventListener("click", (event) => {
@@ -44,21 +49,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-// document.querySelectorAll('.carouselCard').forEach(item => {
-//    item.addEventListener('click', event =>{
-//       let elemName = event.target.className;
-//       let elem = event.target;
-
-//       if (!elemName.includes('carouselCard')){
-//          elem = event.target.parentElement;
-//       }
-
-//       console.log(elem);
-//       console.log(elem.querySelector('button'));
-//       let activeButton = elem.getElementsByTagName('button')[0];
-//       if (activeButton.disabled){
-//          activeButton.disabled = false;
-//       }
-//    })
-// });
