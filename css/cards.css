@@ -30,6 +30,7 @@
 	color: var(--off-white);
 	transform: none;
 	transition: transform .4s ease-out, background-color .5s ease-out;
+	height: 100%;
 }
 
 .card:hover{
@@ -37,20 +38,11 @@
 	background-color: #403b49;
 }
 
-.card-links{
-	display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.bi-folder-fill{
-	font-size: 2.5rem;
-    color: var(--light-purple);
-}
-
 .card .bi-github{
 	font-size: 1.875rem;
 	color: var(--off-white);
+	display: flex;
+    justify-content: flex-end;
 }
 
 .card-body{
