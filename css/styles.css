@@ -132,6 +132,7 @@ a {
   color: var(--off-white);
 }
 
+/* Containers */
 .side-menu_modals {
   padding-left: 3.125rem;
 }
