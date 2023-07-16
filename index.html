@@ -4,198 +4,220 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name=“robots” content=“index,follow”>
-		<meta name="description" content="Official Portfolio of Christina Ioanna Saroglaki - Hello all! I am Christina Ioanna Saroglaki and I am a Software Enginner. To know more about me, check out my website!" />
+		<meta name="robots" content="index,follow" />
+		<meta name="description" content="Hello all! I am Christina Ioanna Saroglaki and I am a Software Engineer. To know more about me, check out my website!" />
 		<meta name="google-site-verification" content="kES5YHnbwb0NOgsdy6K5l3yydlphfvDto7eSZhoEYho" />
 
 		<!-- Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 		<!-- Google fonts -->
-		<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Neuton&family=Permanent+Marker&display=swap" rel="stylesheet" />
 		<!-- CSS -->
-		<link rel="stylesheet" href="css/cards.css" />
 		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/navBar.css" />
 		<link rel="stylesheet" href="css/tablet.css" />
+		<!-- JS -->
+		<script src="js/base.js"></script>
 
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-		<link rel="manifest" href="assets/site.webmanifest">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png" />
+		<link rel="manifest" href="assets/site.webmanifest" />
 
 		<title>Christina Saroglaki | Portfolio</title>
 	</head>
 
 	<body>
-		<div class="dark-bg">
-			<nav class="navbar navbar-expand-md">
-				<div class="container-fluid">
-					<button class="navbar-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<i class="bi bi-list"></i>
-					</button>
-
-					<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-						<ul class="navbar-nav py-2">
-							<li class="nav-item">
-								<a class="nav-link" href="#about">ABOUT</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#timeline">EXPERIENCE</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#projects">PROJECTS</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#contact">CONTACT</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-
-			<section class="profile-container container" id="profile">
-				<div class="profile-row row align-items-center">
-					<div class="image-col col-12 col-xl-4 order-xl-2">
-						<div class="profile-pic">
-							<img src="assets/profile.jpeg" alt="Profile Pic" />
-						</div>
-					</div>
-
-					<div class="profile-col col-12 col-xl-8 order-xl-1">
-						<h1 class="montserrat m-0 title">Hi, I'm <span class="text-purple">Christina</span>,</h1>
-						<p class="inconsolata title-subtitle">and I'm a Software Engineer.</p>
-
-						<div class="d-inline-flex justify-content-center flex-wrap gap-small">
-							<a class="social-link social-light" href="https://github.com/ChristinaSarogl" target="_blank"><i class="bi bi-github icon-bg"></i></a>
-							<a class="social-link social-light" href="https://www.linkedin.com/in/christina-ioanna-saroglaki" target="_blank"><i class="bi bi-linkedin icon-bg"></i></a>
-							<a class="social-link social-light" href="mailto:xristsar@gmail.com" target="_blank"><i class="bi bi-envelope-fill icon-bg"></i></a>
-						</div>
-				  	</div>				  	
-				</div>			
-			</section>
-		</div>
-		
-
-		<section class="padding-30" id="about">
+		<nav class="navbar navbar-expand-md">
 			<div class="container">
-				<div class="card about-card custom-card-bg">
-					<div class="card-body">
-						<div class="about-card-title d-flex align-items-center">
-							<h2 class="card-title montserrat section-title d-inline-block">Hey !</h2>
-							<hr class="d-inline-block">
-						</div>						
-						<p class="card-text inconsolata">I am Christina from Greece! I am a Software Engineer graduate with a dash 
-							of an artist. I love coding, drawing and making handmade gifts.
-						</p>
-					</div>
-			 	</div>
+				<div class="navbar-brand">
+					<img src="assets/favicon.png" alt="Bootstrap" width="30" height="30" />
+				</div>
+
+				<button class="mobile-menu-button" type="button" onclick="menuButtonAnimation()" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link link-offset-2" href="#about" onclick="closeMenu()">ABOUT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-offset-2" href="#timeline" onclick="closeMenu()">EXPERIENCE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-offset-2" href="#projects" onclick="closeMenu()">PROJECTS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-offset-2" href="#contact" onclick="closeMenu()">CONTACT</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			
+		</nav>
+
+		<section class="profile-container container" id="profile">
+			<div class="title-container">
+				<h1>Christina Ioanna</h1>
+				<h1>Saroglaki <span class="purple">[she/her]</span></h1>
+				<p>Software Engineer with an artistic side. I am interested in full-stack development, artificial intelligence, and everything in between.</p>
+			</div>
 		</section>
 
-		<section class="padding-30" id="timeline">
-			<h2 class="montserrat-light text-center section-title">Timeline</h2>
+		<section id="about">
+			<div class="grid-container">
+				<div class="about-img">
+					<img src="./assets/profile.jpeg" alt="My face in a green landscape" loading="lazy">
+				</div>
+				<div class="about-info">
+					<h2 class="section-title">Who am I ?</h2>
+					<p>
+						Hey! I am Christina from Greece! I am a Software Engineer graduate with a dash of an artist. <br /><br />I am currently working as a <span class="purple">Junior Web Developer</span>, which allows me to learn new things every day and to think on my
+						feet. <br /><br />Except from my love for coding, I love drawing and making handmade gifts for my loved ones. While you are here, be sure to say hi, especially if you're into education, arts and
+						coding!
+					</p>
+				</div>
+			</div>
+		</section> 
 
+		<section class="padding-70" id="timeline">
 			<div class="container">
-				<div class="card-align-left">
-					<div class="card custom-card-bg small-card">
-						<div class="card-body">
-							<p class="card-subtitle montserrat-light">2023</p>
-							<h3 class="card-title inconsolata">Complete 2023 Web Development Bootcamp</h3>
-							<p class="card-subtitle montserrat-light mb-2">by Udemy</p>
-						</div>
-					</div>
-				</div>
+				<h2 class="section-title">My Timeline</h2>
 
-				<div class="card-align-right">
-					<div class="card custom-card-bg small-card">
-						<div class="card-body">
-							<p class="card-subtitle montserrat-light">2022</p>
-							<h3 class="card-title inconsolata">Adobe Experience Manager Sites Business Practitioner Certificate</h3>
-							<p class="card-subtitle montserrat-light">by Adobe</p>
-						</div>
+				<div class="side-menu_container">
+					<div class="side-menu_buttons">
+						<button type="button" class="side-menu_btn" data-bs-target="deloitteModal" aria-expanded="true" aria-controls="deloitteModal" disabled>Deloitte</button>					
+						<button type="button" class="side-menu_btn" data-bs-target="bachelorModal" aria-expanded="false" aria-controls="bachelorModal">University of Wolverhampton</button>
+						<button type="button" class="side-menu_btn" data-bs-target="certModal" aria-expanded="false" aria-controls="certModal">Certifications</button>
 					</div>
-				</div>
-				
-				<div class="card-align-left">
-					<div class="card custom-card-bg small-card">
-						<div class="card-body">
-							<p class="card-subtitle montserrat-light">2022-Present</p>
-							<h3 class="card-title inconsolata">Junior Web Developer</h3>
-							<p class="card-subtitle montserrat-light mb-2">@ Deloitte | Thessaloniki, Greece</p>
-							<p class="card-text">
-								I currently works as a Junior Web Developer using AEM to develop responsive websites. My main responsibilities include multitasking across multiple functions and roles to meet deadlines and organizational expectations, as well as,
-								engage with clients to plan and optimize site-related issues.
-							</p>
+					<div class="side-menu_modals">
+						<div class="side-menu_modal" id="deloitteModal">
+							<div>
+								<h3 class="fade-in show" style="transition-delay: 100ms;">Junior Web Developer @ <span class="purple">Deloitte</span></h3>
+								<p class="subtitle fade-in show" style="transition-delay: 100ms;">JUNE 2022 - PRESENT</p>
+								<p class="fade-in show" style="transition-delay: 200ms;">
+									I'm currently a Junior Web Developer rocking it at Deloitte, specializing in responsive website development using Adobe Experience Manager.</p>
+								<p class="fade-in show" style="transition-delay: 300ms;">
+									I use cool technologies like HTML, SCSS, Java, and JavaScript to bring digital dreams to life. I also lead a super talented team that handles content migration.
+									We make sure that valuable data smoothly moves over to Adobe Experience Manager (AEM) without a hitch. </p>
+								<p class="fade-in show m-0" style="transition-delay: 400ms;">
+									When it comes to clients, I make sure that I am there to help them out with any questions they may have about AEM. I'm your go-to person for answers and solutions.
+									From design tweaks to pesky bugs, I've got your back.</p>
+							</div>
 						</div>
-					</div>
-				</div>
-				
-				<div class="card-align-right">
-					<div class="card custom-card-bg small-card">
-						<div class="card-body">
-							<p class="card-subtitle montserrat-light">2018-2022</p>
-							<h3 class="card-title inconsolata">B.Sc(Hons) Computer Science (Software Engineering)</h3>
-							<p class="card-subtitle montserrat-light mb-2">@ University of Wolverhampton | Wolverhampton, UK</p>
-							<p class="card-text">
-								Graduated with a classification of First Honors (1:1) in 2022. My time at the university pushed me to expand, challenge, and adjust my worldview, as well as, experiment with a variety of technologies and computer science concepts.
-							</p>
+						<div class="side-menu_modal hide" id="bachelorModal">
+							<div>
+								<h3 class="fade-in" style="transition-delay: 100ms;">(Hons) Computer Science (Software Engineering)</h3>
+								<p class="subtitle fade-in" style="transition-delay: 100ms;">SEPT 2018 - MAY 2022</p>
+								<p class="fade-in" style="transition-delay: 200ms;">
+									I graduated university with a degree classification of First Honors (1:1) in 2022. </p>
+								<p class="fade-in m-0" style="transition-delay: 300ms;">
+									During my time at university, I delved into a diverse range of fields and technologies.
+									From Python and Java to web and mobile development, UX/UI design, and even AI, I immersed myself in the ever-evolving tech landscape.
+								</p>
+							</div>
 						</div>
-					</div>
-				</div>
-				
+						<div class="side-menu_modal hide" id="certModal">
+							<div>
+								<h3 class="fade-in" style="transition-delay: 100ms;">Machine Learning A-Z™</h3>
+								<p class="fade-in subtitle" style="transition-delay: 100ms;">2023 by Udemy</p>
+								<h3 class="fade-in" style="transition-delay: 200ms;">Complete 2023 Web Development Bootcamp</h3>
+								<p class="fade-in subtitle" style="transition-delay: 200ms;">2023 by Udemy</p>
+								<h3 class="fade-in" style="transition-delay: 300ms;">Adobe Experience Manager Sites Business Practitioner Certificate</h3>
+								<p class="fade-in subtitle" style="transition-delay: 300ms;">2022 by Adobe</p>
+							</div>
+						</div>
+					</div>					
+				</div>				
 			</div>
 		</section>
 
-		<section class="padding-72" id="projects">
+		<section class="padding-70" id="projects">
 			<div class="container">
-				<div class="card project-card custom-card-bg">
-					<div class="card-body">
-						<div class="custom-card-title d-flex align-items-center">
-							<h2 class="card-title montserrat section-title d-inline-block">Projects</h2>
-							<hr class="d-inline-block">
-						</div>						
-						<p class="card-text inconsolata">This webpage is my first official project after university, but more are coming soon!
-							<br />You can check my GitHub to check my university projects!
-						</p>
-						<a class="social-light card-link" href="https://github.com/ChristinaSarogl" target="_blank">
-							<i class="bi bi-github icon-xl"></i>
-							<p class="mb-0">ChristinaSarogl</p>
-						</a>
-					</div>
-			 	</div>
-			</div>
-		</section>
+				<h2 class="section-title">Projects</h2>
 
-		<section class="margin-30 padding-72-72 dark-bg" id="contact">
-			<h2 class="montserrat-light text-center section-title">Connect with me!</h2>
+				<div class="cards-container">
+					<a href="https://github.com/ChristinaSarogl/GeoScavenger" target="_blank">
+						<div class="card">
+							<div class="card-body">
+								<i class="bi bi-github"></i>
+								<h3 class="card-title">GeoScavenger</h3>
+								<p class="card-text">
+									GeoScavenger contains a mobile player app and a manager website.							
+									The mobile application allows the players to manage their accounts, 
+									explore hunts near their location, follow clues, 
+									track their progress, and compete for the highest score.
+									<br/><br/>The web application allows the hunt managers to create 
+									and manage hunts via a dashboard, track active users of a hunt on a map, 
+									and communicate with players using instant messages.
+								</p>
+							</div>
+						</div>
+					</a>
 
-			<div class="padding-30 container text-center">
-				<div class="d-inline-flex justify-content-center flex-wrap gap-large">
-					<div>
-						<i class="bi bi-envelope-fill icon-xl"></i>
-						<a class="contact-link social-light" href="mailto:xristsar@gmail.com" target="_blank">
-							<p class="inconsolata contact-txt mb-0">Email me at</p>
-							<p>xristsar@gmail.com</p>
-						</a>
-					</div>
+					<a href="https://github.com/ChristinaSarogl/personal-website" target="_blank">
+						<div class="card">
+							<div class="card-body">
+								<i class="bi bi-github"></i>								
+								<h3 class="card-title">Personal Portfolio</h3>
+								<p class="card-text">
+									This webpage is my first official project after university, but more are coming soon!
+									<br/><br/>In the meanwhile, you can check my GitHub to see the code or check out my other projects!
+								</p>
+							</div>
+						</div>
+					</a>
 
-					<div>
-						<i class="bi bi-linkedin icon-xl"></i>
-						<a class="contact-link social-light" href="https://www.linkedin.com/in/christina-ioanna-saroglaki" target="_blank">	
-							<p class="inconsolata contact-txt mb-0">Let's connect!</p>
-							<p>Christina Ioanna Saroglaki</p>
-						</a>
-					</div>
+					<a href="https://github.com/ChristinaSarogl/BookHood" target="_blank">
+						<div class="card">
+							<div class="card-body">
+								<i class="bi bi-github"></i>
+								<h3 class="card-title">BookHood</h3>
+								<p class="card-text">
+									BookHood is a user-friendly website that brings book lovers together.
+									<br/><br/>With BookHood, users can log in, manage their accounts, and curate personalized 
+									book lists. Users can also contribute to the website's database by adding new books 
+									and sharing their valuable reviews. All titles are organized into categories, 
+									allowing users to sort them by title, rating, or date added.
+								</p>
+							</div>
+						</div>
+					</a>
 				</div>
 			</div>
 		</section>
 
-		<section class="dark-bg">
-			<p class="footer-subtitle ps-1 mb-0">© 2022 Christina Ioanna Saroglaki</p>
+		<section class="padding-70" id="contact">
+			<div class="container">
+				<h2 class="section-title text-center">Don't Be A Stranger.</h2>
+
+				<div class="contact-container">				
+					<a class="contact-link" href="mailto:xristsar@gmail.com" target="_blank">
+						<i class="bi bi-envelope-fill"></i>
+					</a>
+					
+					<a class="contact-link" href="https://www.linkedin.com/in/christina-ioanna-saroglaki" target="_blank">
+						<i class="bi bi-linkedin"></i>
+					</a>
+	
+					<a class="contact-link" href="https://github.com/ChristinaSarogl" target="_blank">
+						<i class="bi bi-github"></i>
+					</a>
+				</div>
+			</div>
 		</section>
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+		<section class="padding-70">
+			<hr>
+			<div class="footer-container">
+				<p class="m-0">2023 Christina Ioanna Saroglaki</p>
+				<p>All rights reserved. ©</p>
+			</div>
+		</section>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 	</body>
 </html>
