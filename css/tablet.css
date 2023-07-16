@@ -103,6 +103,7 @@
     content: "";
     background-image: url(../assets/chevron-down.svg);
     background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .side-menu_btn[aria-expanded="true"] {
